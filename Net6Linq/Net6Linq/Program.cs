@@ -46,7 +46,7 @@ Console.ReadLine();
 
 // #2 Chunk()
 
-// susppose we have a collection
+// suppose we have a collection
 
 IEnumerable<int> veryBigList = Enumerable.Range(0, 21420);
 
@@ -79,7 +79,7 @@ Console.ReadLine();
 
 // #3 new *By methods improvments!
 
-// The Distinct() extension Method now has a DistinctBy() version which allows you to specify a sub set of a value
+// The Distinct() extension Method now has a DistinctBy() version which allows you to specify a subset of a value
 // to use during comparison!
 
 var items = new[]
@@ -142,7 +142,78 @@ var dangerousPeople = new[]
     new { Name = "Angry Customer", DangerLevel = 900 },
 };
 
-var oldDangerousRecord = new[]
+var oldDangerousPeopleNames = new string[]
 {
-    new { Name = ""}
+    "Grandma",
+    "Local Cat",
 };
+
+// Only the items that have their name in the string array will remain
+var reoccuringDangerousPeople = dangerousPeople.IntersectBy(oldDangerousPeopleNames, s => s.Name);
+
+Console.WriteLine("Only the items whose name value was in the second array will remain:");
+foreach(var item in reoccuringDangerousPeople)
+{
+    Console.WriteLine($"Name: {item.Name}, DangerLevel: {item.DangerLevel}");
+}
+
+Console.ReadLine();
+
+// We also have the new UnionBy() Mehtod! it will join the elements of 2 collections and remove the 
+// duplicates based on the key you provide!
+
+var leaders = new[]
+{
+    new { Name = "Donald", Country = "Usa" },
+    new { Name = "Vladimir", Country = "Russia" },
+    new { Name = "Mamooti", Country = "Iran" },
+};
+
+var otherLeaders = new[]
+{
+    new { Name = "Elizabeth", Country = "United Kingdom" },
+    new { Name = "Stalin", Country = "Russia" },
+    new { Name = "Angela", Country = "Germany" },
+    new { Name = "Ebi", Country = "Iran" },
+};
+
+// All items in otherLeaders will be added except the ones with a repeated country name
+var allLeaders = leaders.UnionBy(otherLeaders, s => s.Country);
+
+Console.WriteLine("The leaders with repeated Country names were not added:");
+foreach(var item in allLeaders)
+{
+    Console.WriteLine($"Name: {item.Name}, Country: {item.Country}");
+}
+
+Console.ReadLine();
+
+// #4 improvments for the *OrDefault() Methods!
+
+//Remember the methods that looked for a specific value and returned that value OR the default() of that type?
+
+var fruits = new[]
+{
+    new { Name = "Banana", Price = 300 },
+    new { Name = "Watermelon", Price = 250 },
+    new { Name = "Apple", Price = 50 },
+    new { Name = "Avacado", Price = 600 },
+};
+
+//this will return the first item that has a price lower than 60 : Apple
+var cheepFruit = fruits.FirstOrDefault(c => c.Price > 60); 
+
+//However it will return null if it fails to find the requested item
+// what if i wanted it to return a specific item in case it fails to find what i want?
+// we can now specify the default value that will be returned when a search fails!
+
+var defaultFruit = new { Name = "UnKnown", Price = 0 };
+
+var cheepOrDefaultFruit = fruits.FirstOrDefault(c => c.Price < 30, defaultFruit); //as simple as that, the default was overwritten
+
+Console.WriteLine($"the fruit i found was: Name: {cheepOrDefaultFruit.Name}, Price: {cheepOrDefaultFruit.Price}");
+
+Console.ReadLine();
+
+
+
