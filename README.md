@@ -8,6 +8,10 @@ Table of Content:
 # #1: Zip()
 
 	Used to join the vlaues of 2 or even 3 collection together in a tuple!
+<hr />
+![zip example](https://drive.google.com/file/d/1fiDlf_PcIY9fg4SShgV18lUt7CDag42R/view?usp=sharing)
+<hr />
+
 
 by:
 [Sepehr golpazir](https://www.linkedin.com/in/sepehr-golpazir-161559197/)
