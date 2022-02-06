@@ -12,7 +12,7 @@ using System.Linq;
 
 int[] numberArray = new int[] { 1, 2, 3, 4 };
 
-string[] stringArray = new string[] { "first", "second", "third", "forth" };
+string[] stringArray = new string[] { "first", "second", "third", "fourth" };
 
 // now what if we wanted to put each elements of the 2 arrays into a grouping next to each other?
 // something like: (1,"first") , (2,"second), (3,"third) ?
@@ -31,7 +31,7 @@ foreach (var (number, name) in zipedArray)
 
 // Bonus! you can even zip 3 collections together if you would like!
 
-double[] percents = new double[] { 0.1D, 0.2D, 0.3D };
+double[] percents = new double[] { 0.1D, 0.2D, 0.3D, 0.4D };
 
 var tripleZippedArray = numberArray.Zip(stringArray, percents).ToArray();
 
@@ -209,7 +209,8 @@ var cheepFruit = fruits.FirstOrDefault(c => c.Price > 60);
 
 var defaultFruit = new { Name = "UnKnown", Price = 0 };
 
-var cheepOrDefaultFruit = fruits.FirstOrDefault(c => c.Price < 30, defaultFruit); //as simple as that, the default was overwritten
+var cheepOrDefaultFruit = fruits.FirstOrDefault(c => c.Price < 30, defaultFruit);
+//as simple as that, the default was overwritten
 
 Console.WriteLine($"the fruit i found was: Name: {cheepOrDefaultFruit.Name}, Price: {cheepOrDefaultFruit.Price}");
 
