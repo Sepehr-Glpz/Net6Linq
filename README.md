@@ -9,7 +9,7 @@ Table of Content:
 
 	Used to join the vlaues of 2 or even 3 collection together in a tuple!
 
-<img src="https://drive.google.com/uc?export=view&id=1fiDlf_PcIY9fg4SShgV18lUt7CDag42R" data-canonical-src="https://drive.google.com/uc?export=view&id=1fiDlf_PcIY9fg4SShgV18lUt7CDag42R" />
+<img src="./content/1.png" />
 
 by:
 [Sepehr golpazir](https://www.linkedin.com/in/sepehr-golpazir-161559197/)
