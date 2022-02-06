@@ -7,9 +7,13 @@ Table of Content:
 
 # #1: Zip()
 
-	Used to join the vlaues of 2 or even 3 collection together in a tuple!
+	Used to join the vlaues of 2 collection together in a tuple!
 
 <img src="./content/1.png" />
+
+	You can even use it for up to 3 collections!
+	
+<img src="./content/1-5.png" />
 
 by:
 [Sepehr golpazir](https://www.linkedin.com/in/sepehr-golpazir-161559197/)
