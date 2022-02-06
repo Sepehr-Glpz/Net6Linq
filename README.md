@@ -12,7 +12,7 @@ Table of Content:
 <table>
 	<tr>
 		<td align="center">
-			<img src="https://drive.google.com/file/d/1fiDlf_PcIY9fg4SShgV18lUt7CDag42R/view?usp=sharing" />
+			<img src="https://drive.google.com/uc?export=view&id=1fiDlf_PcIY9fg4SShgV18lUt7CDag42R" data-canonical-src="https://drive.google.com/uc?export=view&id=1fiDlf_PcIY9fg4SShgV18lUt7CDag42R" />
 		</td>
 	</tr>
 </table>
