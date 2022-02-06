@@ -9,7 +9,13 @@ Table of Content:
 
 	Used to join the vlaues of 2 or even 3 collection together in a tuple!
 <hr />
-![zip example](https://drive.google.com/file/d/1fiDlf_PcIY9fg4SShgV18lUt7CDag42R/view?usp=sharing)
+<table>
+	<tr>
+		<td align="center">
+			<img src="https://drive.google.com/file/d/1fiDlf_PcIY9fg4SShgV18lUt7CDag42R/view?usp=sharing" />
+		</td>
+	</tr>
+</table>
 <hr />
 
 
