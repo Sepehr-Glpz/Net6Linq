@@ -41,7 +41,7 @@ Table of Content:
 
 	Used to filter a collection by comparing a sub-value of the items to values
 	provided by another collection of values which are of the same type
-	and removing the *matching* elements.
+	and removing the matching elements.
 	
 <img src="./content/3-2.png" />
 
