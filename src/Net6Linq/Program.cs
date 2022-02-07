@@ -77,7 +77,7 @@ foreach (var smallerList in smallerLists)
 
 Console.ReadLine();
 
-// #3 new *By methods improvments!
+// #3 new *By methods improvements!
 
 // The Distinct() extension Method now has a DistinctBy() version which allows you to specify a subset of a value
 // to use during comparison!
@@ -188,7 +188,7 @@ foreach(var item in allLeaders)
 
 Console.ReadLine();
 
-// #4 improvments for the *OrDefault() Methods!
+// #4 improvements for the *OrDefault() Methods!
 
 //Remember the methods that looked for a specific value and returned that value OR the default() of that type?
 

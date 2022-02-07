@@ -62,7 +62,7 @@ Table of Content:
 
 <hr />
 
-# #4: *OrDefault() improvment
+# #4: *OrDefault() improvement
 
 	By default, all the *OrDefault() Extension Methods return default(T) when they fail
 	to find the requested item. with the new version, you can specify a default
