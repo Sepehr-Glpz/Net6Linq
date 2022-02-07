@@ -64,7 +64,7 @@ Table of Content:
 
 # #4: *OrDefault() improvment
 
-	You all the *OrDefault() Extension Methods return default(T) when they fail
+	By default, all the *OrDefault() Extension Methods return default(T) when they fail
 	to find the requested item. with the new version, you can specify a default
 	value to be returned instead of default(T).
 	
