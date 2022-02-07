@@ -72,5 +72,25 @@ Table of Content:
 
 <hr />
 
+# #5: Index and Range operations on IEnumerable
+
+	You can now use the Index and Range Expressions on new provided Methods for IEnumerable<T>
+
+1- Take()
+
+	This Method accepts both an integer and a Range expression for enumerating the 
+	IEnumerable and giving you the result.
+
+<img src="./content/5-1.png" />
+		
+2- ElementAt() - ElementAtOrDefault()
+
+	These Methods now accept both an interger and an Index expression for enumerating the
+	IEnumerable and finding the requested item at that location.
+	
+<img src="./content/5-2.png" />
+
+<hr />
+
 by:
 [Sepehr golpazir](https://www.linkedin.com/in/sepehr-golpazir-161559197/)

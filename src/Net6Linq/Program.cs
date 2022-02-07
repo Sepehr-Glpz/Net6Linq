@@ -19,9 +19,9 @@ string[] stringArray = new string[] { "first", "second", "third", "fourth" };
 // We can acheive that using the new Linq Zip() extention method!
 // the method returns a tuple of the joined values.
 
-IEnumerable<(int number, string name)> zipedArray = numberArray.Zip(stringArray);
+IEnumerable<(int number, string name)> zipedItems = numberArray.Zip(stringArray);
 
-var valuesArray = zipedArray.ToArray();
+var zipedArray = zipedItems.ToArray();
 
 //You can even deconstruct the joined values in a foreach loop!
 foreach (var (number, name) in zipedArray)
@@ -215,6 +215,49 @@ var cheepOrDefaultFruit = fruits.FirstOrDefault(c => c.Price < 30, defaultFruit)
 Console.WriteLine($"the fruit i found was: Name: {cheepOrDefaultFruit.Name}, Price: {cheepOrDefaultFruit.Price}");
 
 Console.ReadLine();
+
+// #5 Index and range operations on IEnumerable
+
+// as you know, an IEnumerable<T> does not expose access to index related operations because of
+// IEnumerbale's inherit nature. however we have 2 new methods that allow us to treat the IEnumerable as
+// an indexed collection!
+
+IEnumerable<int> numbers = Enumerable.Range(1, 30);
+
+// The Take() Method accepts both an int as a size OR a Range expression!
+
+IEnumerable<int> first10Items = numbers.Take(count: 10); //int
+
+IEnumerable<int> last10Items = numbers.Take(range: ^10..); // Range
+
+Console.WriteLine("First 10:");
+foreach(var number in first10Items)
+{
+    Console.Write($"{number}-");
+}
+Console.WriteLine($"\nLast 10:");
+foreach(var number in last10Items)
+{
+    Console.Write($"{number}-");
+}
+
+Console.ReadLine();
+// The ElementAt() and the ElementAtOrDefault() allow you to access an item at a specific index by
+// providing both an int as an index OR an Index expression
+
+int fifthNumber = numbers.ElementAt(index: 4); //int
+
+int fifthFromEndNumber = numbers.ElementAt(index: ^5); // Index
+
+Console.WriteLine($"Fifth number is: {fifthNumber}");
+
+Console.WriteLine($"Fifth number from the end of the sequence is: {fifthFromEndNumber}");
+
+Console.ReadLine();
+
+
+
+
 
 
 
