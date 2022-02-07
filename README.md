@@ -8,6 +8,7 @@ Table of Content:
 2) Chunk()
 3) \*By()
 4) \*OrDefault()
+5) IEnumerable Index and Range
 
 # #1: Zip()
 
