@@ -93,5 +93,8 @@ Table of Content:
 
 <hr />
 
+Interested in reading more about .NET 6 Linq and collections? 
+You can read my new post about the last new Linq addition [here](https://virgool.io/@sepehrgolpazir/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D9%88-%D8%AA%D9%88%D8%B6%DB%8C%D8%AD-%DB%8C%DA%A9-%D8%AA%D8%A7%D8%A8%D8%B9-%D8%AC%D8%AF%DB%8C%D8%AF-linq-%D8%AF%D8%B1-%D8%AF%D8%A7%D8%AA-%D9%86%D8%AA-6-eyufvghnxc01) on virgool!
+
 by:
-[Sepehr golpazir](https://www.linkedin.com/in/sepehr-golpazir-161559197/)
+[Sepehr Golpazir](https://www.linkedin.com/in/sepehr-golpazir-161559197/)
